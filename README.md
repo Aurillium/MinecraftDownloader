@@ -10,3 +10,5 @@ Files that have been changed on the Mojang servers will not be re-downloaded and
 Run with `uv run main.py`, or just install Pydantic and aiohttp and run `python main.py`. Configuration is found in `main.py`.
 
 This is not a launcher and does not collect files in a format that allows a launcher to launch the game, it just downloads everything. How to host the files is left up to you for now, eventually I'll make a Docker container or something similar to statically host the files through Apache or Nginx under the right hostnames. For now, a summary of what folder needs to be served under what hostname is included in comments in the script. A custom root CA and DNS records will be required to make this work with the normal launcher.
+
+As of 2026-01-03, the total of all game files is ~45GB, and all other generated files will likely be less than 3MB.
