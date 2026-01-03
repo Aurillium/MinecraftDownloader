@@ -8,3 +8,5 @@ The project keeps a record of hashes of downloaded files, which will be checked 
 Files that have been changed on the Mojang servers will not be re-downloaded and must be deleted for a version with the new hash to be downloaded.
 
 Run with `uv run main.py`, or just install Pydantic and aiohttp and run `python main.py`. Configuration is found in `main.py`.
+
+This is not a launcher and does not collect files in a format that allows a launcher to launch the game, it just downloads everything. How to host the files is left up to you for now, eventually I'll make a Docker container or something similar to statically host the files through Apache or Nginx under the right hostnames. For now, a summary of what folder needs to be served under what hostname is included in comments in the script. A custom root CA and DNS records will be required to make this work with the normal launcher.
