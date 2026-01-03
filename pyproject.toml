@@ -1,0 +1,13 @@
+[project]
+name = "minecraftdownloader"
+version = "0.1.0"
+description = "Downloads jarfiles, libraries, and assets for all versions of Minecraft. These can be statically hosted to create a local cache."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiohttp==3.13",
+    "pydantic==2.12"
+]
+
+[project.scripts]
+downloader = "main:main"
